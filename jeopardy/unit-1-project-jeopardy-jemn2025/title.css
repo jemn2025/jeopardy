@@ -1,0 +1,39 @@
+html{
+    height: 100vh;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
+img {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+a {
+    text-align: center;
+    border: 2px solid black;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    padding: 2px;
+    font-size: 20px;
+    background-color: lightgrey;
+}
+
+footer{
+    text-align: center;
+    float: bottom;
+    border: 2px solid black;
+    background-color: lightgray;
+    margin-right: 6rem;
+    margin-left: 6rem;
+    margin-top: 8rem;
+}
