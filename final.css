@@ -1,16 +1,44 @@
 html {
     height: 100vh;
+    background-color: blue;
 }
 
 body {
     justify-content: center;
     min-height: 100%;
+    color: yellow;
 }
+body{
+    text-align: center;
+}
+
 h1 {
     display: flex;
     justify-content: center;
     margin-bottom: 4rem;
     font-size: 60px;
+    animation-duration: 3s;
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+
+}
+
+@keyframes spin{
+    0%{
+
+    }
+    50%{
+        scale 2;
+        transform: rotate(0);
+        border-radius: 0;
+    }
+    100%{
+        transform: rotate(360deg);
+        border-radius: 100%;
+        scale: 2;
+    }
 }
 
 h2 {
@@ -23,11 +51,9 @@ h3 {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
-    border: 2px solid black;
+    border: 12% solid black;
     margin-left: 25%;
     margin-right: 25%;
-    background-color: blue;
-    color: yellow;
 }
 
 p {
@@ -36,20 +62,14 @@ p {
     border: 2px solid black;
     margin-left: 25%;
     margin-right: 25%;
-    padding: 10%
+    padding: 10%;
+    background-color: white;
+    color: black;
 }
 
-.inp-contianer{
+.input {
     display: flex;
-    justify-content: space-between;
-}
-
-input{
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: center;
 }
 
 .container {
@@ -60,7 +80,7 @@ input{
 }
 
 button {
-    font-size: 25px;
+    font-size: 156%;
 }
 
 footer{
@@ -70,5 +90,70 @@ footer{
     background-color: lightgray;
     margin-right: 10rem;
     margin-left: 10rem;
-    margin-top: 6rem;
+    margin-top: 220px;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        text-align: center;
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4rem;
+        font-size: 27px;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    h3 {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        border: 12% solid black;
+        margin-left: 25%;
+        margin-right: 25%;
+        background-color: blue;
+        color: yellow;
+    }
+
+    p {
+        display: flex;
+        justify-content: center;
+        border: 12% solid black;
+        margin-left: 25%;
+        margin-right: 25%;
+        padding: 10%
+    }
+
+    .input {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    button {
+        font-size: 156%;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer{
+        padding: 5px;
+    }
 }
